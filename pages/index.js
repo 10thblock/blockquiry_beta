@@ -230,20 +230,21 @@ export default function Home({ session }) {
           <Stack spacing={2}
             sx={{}}
 >
-               <BlockTypo> It's almost time 🔥</BlockTypo>
+               <BlockTypo> It's almost time 🔥 Nov 24, 2022</BlockTypo>
      <div className="App">
       {timeLeft.hours || timeLeft.minutes || timeLeft.seconds ? (
             <SecondaryBlockTypo>
-          <span>{timeLeft.hours}</span>
+          <span>{timeLeft.hours}&nbsp;Hours&nbsp;</span>
+        <span>:</span>
+          <span>&nbsp;{timeLeft.minutes}&nbsp;Minutes&nbsp;</span>
           <span>:</span>
-          <span>{timeLeft.minutes}</span>
-          <span>:</span>
-          <span>{timeLeft.seconds}</span>
+          <span>&nbsp;{timeLeft.seconds}&nbsp;Seconds</span>
           </SecondaryBlockTypo>
       ) : (
         <BlockTypo> Time is up 🔥</BlockTypo>
       )}
 </div>
+{/* <BlockTypo>November 24, 2022</BlockTypo> */}
         </Stack>
         </Box>
       </Container>
