@@ -28,9 +28,9 @@ function ColorText({ children }) {
 const BlockTypo = styled(Typography)(() => ({
   fontFamily: 'play',
   opacity: 1,
-  fontSize: '2.00rem',
+  fontSize: '1.25rem',
   fontWeight: 700,
-  lineHeight: '2.25rem',
+  lineHeight: '1.5rem',
   textAlign: 'center',
   paddingLeft: 0,
   whiteSpace: 'wrap',
@@ -40,9 +40,9 @@ const BlockTypo = styled(Typography)(() => ({
 const SecondaryBlockTypo = styled(Typography)(() => ({
   fontFamily: 'play',
   opacity: 1,
-  fontSize: '2.00rem',
+  fontSize: '1.25rem',
   fontWeight: 700,
-  lineHeight: '2.25rem',
+  lineHeight: '1.5rem',
   textAlign: 'center',
   paddingLeft: 0,
   whiteSpace: 'wrap',

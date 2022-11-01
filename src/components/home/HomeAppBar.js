@@ -214,7 +214,7 @@ function HomeAppBar(props) {
           <IconButton
             aria-label="open drawer"
             edge="start"
-            onClick={handleDrawerToggle}
+            // onClick={handleDrawerToggle}
             sx={{
               mx: 'auto',
               display: { sm: 'none' },
