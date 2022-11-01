@@ -230,7 +230,7 @@ export default function Home({ session }) {
           <Stack spacing={2}
             sx={{}}
 >
-               <BlockTypo> It's almost time 🔥 Nov 24, 2022</BlockTypo>
+               <BlockTypo> New web app launching Nov 24th</BlockTypo>
      <div className="App">
       {timeLeft.hours || timeLeft.minutes || timeLeft.seconds ? (
             <SecondaryBlockTypo>
@@ -244,7 +244,7 @@ export default function Home({ session }) {
         <BlockTypo> Time is up 🔥</BlockTypo>
       )}
 </div>
-{/* <BlockTypo>November 24, 2022</BlockTypo> */}
+{/* <Box>🔥</Box> */}
         </Stack>
         </Box>
       </Container>

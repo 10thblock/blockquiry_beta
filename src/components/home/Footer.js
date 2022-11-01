@@ -19,10 +19,10 @@ import { tokens } from '../../tokens';
 function Copyright() {
   return (
     <>
-      {' © '}
+      {/* {' © '}{new Date().getFullYear()}. */}
 
         <Button size="small" sx={{ textTransform: 'none', bgColor: 'none' }}>
-          blockquiry {new Date().getFullYear()}.
+        inquiries@blockquiry.com
         </Button>
 
     </>
@@ -93,6 +93,7 @@ export default function Footer() {
             justifyContent: 'center',
             alignItems: 'center',
             paddingLeft: 5,
+            paddingRight: 2,
           }}
         >
           <Copyright />
