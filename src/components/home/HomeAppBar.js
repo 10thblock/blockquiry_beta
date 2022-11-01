@@ -21,7 +21,27 @@ import Typography from '@mui/material/Typography';
 import { styled } from '@mui/system';
 import { useRef } from 'react';
 import { tokens } from '../../tokens';
-import ReportDialog from '../accountdetails/reportcryptocrime/ReportDialog';
+import FlagCircleIcon from '@mui/icons-material/FlagCircle';
+// import ReportDialog from '../accountdetails/reportcryptocrime/ReportDialog';
+
+const ReportCryptoCrimeButton = styled(Button)(() => ({
+  fontFamily: 'Roboto, Arial,  sans-serif',
+  fontSize: '0.7500em',
+  fontWeight: 500,
+  maxHeight: '32px',
+  textTransform: 'none',
+  color: tokens.palette_primary,
+  border: '1px, solid',
+  borderRadius: 18,
+  paddingTop: '2px',
+  paddingBottom: '2px',
+  paddingRight: '8px',
+  paddingLeft: '8px',
+  backgroundColor: tokens.token_grey_100,
+  '&:hover,&:focus': {
+    borderColor: tokens.token_grey_300,
+  },
+}));
 
 const LinkButton = styled(Button)(() => ({
   fontFamily: 'Roboto, Arial,  sans-serif',
@@ -206,14 +226,31 @@ function HomeAppBar(props) {
 
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             <Link href="/about/blockquiry">
-              <LinkButton>About</LinkButton>
+              <LinkButton disabled>About</LinkButton>
             </Link>
           </Box>
 
           <Box sx={{ flexGrow: 1 }} />
 
           <Box>
-            <ReportDialog />
+          <ReportCryptoCrimeButton
+    disabled 
+        style={{ margin: 0 }}
+        startIcon={
+          <FlagCircleIcon
+            style={{
+              marginLeft: 0,
+              marginRight: 0,
+              height: '18px',
+              width: '18px',
+              color: tokens.token_red_typography,
+            }}
+          />
+        }
+      >
+        Report Crypto Crime
+      </ReportCryptoCrimeButton>
+            {/* <ReportDialog /> */}
           </Box>
         </Toolbar>
 

@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-filename-extension */
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import { Container, Stack, Box, Button, Typography } from '@mui/material/';
@@ -18,6 +18,8 @@ import Footer from '../src/components/home/Footer';
 import { tokens } from '../src/tokens';
 import HomeAppBar from '../src/components/home/HomeAppBar';
 
+
+
 // eslint-disable-next-line no-empty-pattern
 
 function ColorText({ children }) {
@@ -26,13 +28,25 @@ function ColorText({ children }) {
 const BlockTypo = styled(Typography)(() => ({
   fontFamily: 'play',
   opacity: 1,
-  fontSize: '1.00rem',
+  fontSize: '2.00rem',
   fontWeight: 700,
-  lineHeight: '1.25rem',
+  lineHeight: '2.25rem',
   textAlign: 'center',
   paddingLeft: 0,
   whiteSpace: 'wrap',
   color: tokens.palette_primary,
+}));
+
+const SecondaryBlockTypo = styled(Typography)(() => ({
+  fontFamily: 'play',
+  opacity: 1,
+  fontSize: '2.00rem',
+  fontWeight: 700,
+  lineHeight: '2.25rem',
+  textAlign: 'center',
+  paddingLeft: 0,
+  whiteSpace: 'wrap',
+  color: tokens.palette_secondary,
 }));
 
 const Search = styled('div')(() => ({
@@ -76,7 +90,28 @@ export default function Home({ session }) {
 
     router.push(`/search?term=${term}`);
   };
+  const calculateTimeLeft = () => {
+    const difference = +new Date("2022-11-24T18:20:00+05:30") - +new Date();
+    let timeLeft = {};
 
+    if (difference > 0) {
+      timeLeft = {
+        hours: Math.floor(difference / (1000 * 60 * 60)),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+      };
+    }
+
+    return timeLeft;
+  };
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+  useEffect(() => {
+    setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+  });
   return (
     <>
       <Head>
@@ -170,7 +205,7 @@ export default function Home({ session }) {
             justifyContent="center"
             maxWidth="584px"
           >
-            <SearchButton type="submit" onClick={search}>
+            <SearchButton disabled  type="submit" onClick={search}>
               Block Search
             </SearchButton>
             <Tooltip title="Advanced Search Coming Soon" placement="bottom">
@@ -192,26 +227,25 @@ export default function Home({ session }) {
             mx: '20px',
           }}
         >
-          {/* <Box
-            sx={{
-              maxWidth: '300px',
-              display: 'flex',
-              justifyContent: 'center',
-              alignContent: 'center',
-              marginTop: '20px',
-              padding: '5px',
-            }}
-          > */}
-          <BlockTypo sx={{ textAlign: 'center' }}>
-            <b>
-              <ColorText>b</ColorText>lock<ColorText>&nbsp;•&nbsp;</ColorText>
-              quir
-              <ColorText>&nbsp;•&nbsp;</ColorText>y
-            </b>{' '}
-            an act of asking for blockchain information.
-          </BlockTypo>
+          <Stack spacing={2}
+            sx={{}}
+>
+               <BlockTypo> It's almost time 🔥</BlockTypo>
+     <div className="App">
+      {timeLeft.hours || timeLeft.minutes || timeLeft.seconds ? (
+            <SecondaryBlockTypo>
+          <span>{timeLeft.hours}</span>
+          <span>:</span>
+          <span>{timeLeft.minutes}</span>
+          <span>:</span>
+          <span>{timeLeft.seconds}</span>
+          </SecondaryBlockTypo>
+      ) : (
+        <BlockTypo> Time is up 🔥</BlockTypo>
+      )}
+</div>
+        </Stack>
         </Box>
-        {/* </Box> */}
       </Container>
       <Footer />
     </>

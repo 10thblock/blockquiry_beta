@@ -8,23 +8,23 @@ import Typography from '@mui/material/Typography';
 import { Button, useMediaQuery, Stack } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2';
 import { styled } from '@mui/system';
-import { isMobile } from 'react-device-detect';
+// import { isMobile } from 'react-device-detect';
 import { tokens } from '../../tokens';
 
-const useMobileBreakpoint = (target = 600) => {
-  const isDesktop = useMediaQuery(`(min-width:${target}px)`);
-  return !isDesktop || isMobile;
-};
+// const useMobileBreakpoint = (target = 600) => {
+//   const isDesktop = useMediaQuery(`(min-width:${target}px)`);
+//   return !isDesktop || isMobile;
+// };
 
 function Copyright() {
   return (
     <>
       {' © '}
-      <Link href="./about/blockquiry">
+
         <Button size="small" sx={{ textTransform: 'none', bgColor: 'none' }}>
           blockquiry {new Date().getFullYear()}.
         </Button>
-      </Link>{' '}
+
     </>
   );
 }
@@ -39,7 +39,7 @@ const Item = styled(Box)(() => ({
 }));
 
 export default function Footer() {
-  const isMobile = useMobileBreakpoint(600);
+  // const isMobile = useMobileBreakpoint(600);
   return (
     <Box
       component="footer"
@@ -63,22 +63,24 @@ export default function Footer() {
             paddingRight: 5,
           }}
         >
-          <Link href="/web/blockquiry">
+
             <Button
+            disabled 
               size="small"
               sx={{ textTransform: 'none', bgColor: 'none' }}
             >
               web
             </Button>
-          </Link>
-          <Link href="/tor/blockquiry">
+  
+  
             <Button
+            disabled 
               size="small"
               sx={{ textTransform: 'none', bgColor: 'none' }}
             >
               tor
             </Button>
-          </Link>
+ 
         </Grid>
         <Grid
           xs={6}
@@ -125,23 +127,25 @@ export default function Footer() {
         >
           <Box sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }}>
             <Stack direction="row">
-              <Link href="/policies/blockquiry/privacy">
+
                 <Button
+                disabled 
                   size="small"
                   sx={{ textTransform: 'none', bgColor: 'none' }}
                 >
                   Privacy
                 </Button>
-              </Link>
 
-              <Link href="/policies/blockquiry.com/terms">
+
+
                 <Button
+                disabled 
                   size="small"
                   sx={{ textTransform: 'none', bgColor: 'none' }}
                 >
                   Terms
                 </Button>
-              </Link>
+     
             </Stack>
           </Box>
         </Grid>
