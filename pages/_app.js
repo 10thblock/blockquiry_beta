@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Head from 'next/head';
 import { ThemeProvider } from '@mui/material/styles';
+import { Analytics } from '@vercel/analytics/react';
 import CssBaseline from '@mui/material/CssBaseline';
 import { CacheProvider } from '@emotion/react';
 import theme from '../config/theme';
@@ -21,6 +22,7 @@ export default function MyApp(props) {
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
         <Component {...pageProps} />
+        <Analytics />
       </ThemeProvider>
     </CacheProvider>
   );
