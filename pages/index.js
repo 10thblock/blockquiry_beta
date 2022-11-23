@@ -91,7 +91,7 @@ export default function Home({ session }) {
     router.push(`/search?term=${term}`);
   };
   const calculateTimeLeft = () => {
-    const difference = +new Date("2022-11-24T18:20:00+05:30") - +new Date();
+    const difference = +new Date("2022-11-27T18:20:00+05:30") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -230,7 +230,7 @@ export default function Home({ session }) {
           <Stack spacing={2}
             sx={{}}
 >
-               <BlockTypo> New web app launching Nov 24th</BlockTypo>
+               <BlockTypo> New web app launching Nov 27th</BlockTypo>
      <div className="App">
       {timeLeft.hours || timeLeft.minutes || timeLeft.seconds ? (
             <SecondaryBlockTypo>
