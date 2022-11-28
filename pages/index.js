@@ -91,7 +91,7 @@ export default function Home({ session }) {
     router.push(`/search?term=${term}`);
   };
   const calculateTimeLeft = () => {
-    const difference = +new Date("2022-11-28T23:20:00+05:30") - +new Date();
+    const difference = +new Date("2022-11-28T23:20:00+09:30") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
