@@ -230,7 +230,7 @@ export default function Home({ session }) {
           <Stack spacing={2}
             sx={{}}
 >
-               <BlockTypo> New web app launching Nov 28th</BlockTypo>
+               <BlockTypo> New web app launching Nov 29th</BlockTypo>
      <div className="App">
       {timeLeft.hours || timeLeft.minutes || timeLeft.seconds ? (
             <SecondaryBlockTypo>
