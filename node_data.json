@@ -14,7 +14,7 @@
          "name":"C"
       },
       {
-         "id":"to1",
+         "id":"from3",
          "name":"G"
       },
       {
@@ -37,7 +37,7 @@
       },
       {
          "source":"start",
-         "target":"to1"
+         "target":"from3"
       },
       {
          "source":"start",
