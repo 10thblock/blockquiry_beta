@@ -1,55 +1,55 @@
 {
-"nodes": [
-{
-"id": "start",
-"name": "Start", //attribution 
-"type": "something"         // EOA or SmartContract
-},
-{
-"id": "from1",
-"name": "B"
-},
-{
-"id": "from2",
-"name": "C"
-},
-{
-"id": "to1",
-"name": "G"
-},
-{
-"id": "to2",
-"name": "H"
-},
-{
-"id": "to3",
-"name": "I"
-},
-],
-"links": [
-{
-"source": "start",
-"target": "from1"
-},
-{
-"source": "start",
-"target": "from2"
-},
-{
-"source": "start",
-"target": "from3"
-},
-{
-"source": "start",
-"target": "to1"
-},
-{
-"source": "start",
-"target": "to2"
-},
-{
-"source": "start",
-"target": "to3"
-}
-]
+   "nodes":[
+      {
+         "id":"start",
+         "name":"Start",
+         "type":
+      },
+      {
+         "id":"from1",
+         "name":"B"
+      },
+      {
+         "id":"from2",
+         "name":"C"
+      },
+      {
+         "id":"to1",
+         "name":"G"
+      },
+      {
+         "id":"to2",
+         "name":"H"
+      },
+      {
+         "id":"to3",
+         "name":"I"
+      }
+   ],
+   "links":[
+      {
+         "source":"start",
+         "target":"from1"
+      },
+      {
+         "source":"start",
+         "target":"from2"
+      },
+      {
+         "source":"start",
+         "target":"from3"
+      },
+      {
+         "source":"start",
+         "target":"to1"
+      },
+      {
+         "source":"start",
+         "target":"to2"
+      },
+      {
+         "source":"start",
+         "target":"to3"
+      }
+   ]
 }
