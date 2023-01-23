@@ -17,14 +17,14 @@
       {
          "id":"from2",
          "name":"C",
-         "type":"Smart Contract"
+         "type":"contract"
          "atv": "0.17",
          "atf": "1.1"
       },
       {
          "id":"from3",
          "name":"G",
-         "type":"Smart Contract"
+         "type":"contract"
       },
       {
          "id":"to2",
