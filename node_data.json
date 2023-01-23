@@ -3,7 +3,7 @@
 {
 "id": "start",
 "name": "Start", //attribution 
-"type":          // EOA or SmartContract
+"type": "something"         // EOA or SmartContract
 },
 {
 "id": "from1",
