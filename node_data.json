@@ -1,86 +1,86 @@
 {
 "nodes": [
 {
-"id": 1,
-"name": "A"
+"id": "start",
+"name": "Start"
 },
 {
-"id": 2,
+"id": "from1",
 "name": "B"
 },
 {
-"id": 3,
+"id": "from2",
 "name": "C"
 },
 {
-"id": 4,
+"id": "from3",
 "name": "D"
 },
 {
-"id": 5,
+"id": "from4",
 "name": "E"
 },
 {
-"id": 6,
+"id": "from5",
 "name": "F"
 },
 {
-"id": 7,
+"id": "to1",
 "name": "G"
 },
 {
-"id": 8,
+"id": "to2",
 "name": "H"
 },
 {
-"id": 9,
+"id": "to3",
 "name": "I"
 },
 {
-"id": 10,
+"id": "to4",
 "name": "J"
 }
 ],
 "links": [
 {
-"source": 1,
-"target": 2
+"source": "start",
+"target": "from1"
 },
 {
-"source": 1,
-"target": 5
+"source": "start",
+"target": "from2"
 },
 {
-"source": 1,
-"target": 6
+"source": "start",
+"target": "from3"
 },
 {
-"source": 2,
-"target": 3
+"source": "start",
+"target": "from4"
 },
 {
-"source": 2,
-"target": 7
+"source": "start",
+"target": "from5"
 },
 {
-"source": 3,
-"target": 4
+"source": "start",
+"target": "to1"
 },
 {
-"source": 8,
-"target": 3
+"source": "start",
+"target": "to2"
 },
 {
-"source": 4,
-"target": 5
+"source": "start",
+"target": "to3"
 },
 {
-"source": 4,
-"target": 9
+"source": "start",
+"target": "to4"
 },
 {
-"source": 5,
-"target": 10
+"source": "start",
+"target": "to1"
 }
 ]
 }
