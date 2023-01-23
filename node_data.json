@@ -2,10 +2,10 @@
    "nodes":[
       {
          "id":"0x0",
-         "name":"alpha", // if no attribution 
+         "name":"alpha",
          "type":"principal",
-         "atv": 0.32,// ave txns value 
-         "atf": 3.3 // ave monthly txns requency 
+         "atv": 0.32,
+         "atf": 3.3
       },
       {
          "id":"1x0",
@@ -40,7 +40,7 @@
    "links":[
       {
          "source":"0x0",
-         "target":"1x0" // 1 to the left = sending to principal
+         "target":"1x0" 
       },
       {
          "source":"0x0",
@@ -52,7 +52,7 @@
       },
       {
          "source":"0x0",
-         "target":"0x1" // 1 to the right = principal sending
+         "target":"0x1" 
       },
       {
          "source":"0x0",
