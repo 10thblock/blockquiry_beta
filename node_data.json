@@ -3,7 +3,7 @@
       {
          "id":"start",
          "name":"Start",
-         "type":
+         "type": "something"
       },
       {
          "id":"from1",
