@@ -4,22 +4,22 @@
          "id":"0x0",
          "name":"alpha", // if no attribution 
          "type":"principal",
-         "atv": "0.32",// ave txns value 
-         "atf": "3.3" // ave monthly txns requency 
+         "atv": 0.32,// ave txns value 
+         "atf": 3.3 // ave monthly txns requency 
       },
       {
          "id":"1x0",
          "name":"B",
          "type":"EOA",
-         "atv": "0.12",
-         "atf": "1.3"
+         "atv": 0.12,
+         "atf": 1.3
       },
       {
          "id":"2x0",
          "name":"C",
          "type":"contract",
-         "atv": "0.17",
-         "atf": "1.1"
+         "atv": 0.17,
+         "atf": 1.1
       },
       {
          "id":"3x0",
