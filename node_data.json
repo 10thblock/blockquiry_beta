@@ -14,18 +14,6 @@
 "name": "C"
 },
 {
-"id": "from3",
-"name": "D"
-},
-{
-"id": "from4",
-"name": "E"
-},
-{
-"id": "from5",
-"name": "F"
-},
-{
 "id": "to1",
 "name": "G"
 },
@@ -37,10 +25,6 @@
 "id": "to3",
 "name": "I"
 },
-{
-"id": "to4",
-"name": "J"
-}
 ],
 "links": [
 {
@@ -57,14 +41,6 @@
 },
 {
 "source": "start",
-"target": "from4"
-},
-{
-"source": "start",
-"target": "from5"
-},
-{
-"source": "start",
 "target": "to1"
 },
 {
@@ -74,14 +50,6 @@
 {
 "source": "start",
 "target": "to3"
-},
-{
-"source": "start",
-"target": "to4"
-},
-{
-"source": "start",
-"target": "to1"
 }
 ]
 }
