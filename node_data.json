@@ -37,10 +37,6 @@
       },
       {
          "source":"start",
-         "target":"from3"
-      },
-      {
-         "source":"start",
          "target":"to1"
       },
       {
