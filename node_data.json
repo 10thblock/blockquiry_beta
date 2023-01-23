@@ -17,7 +17,7 @@
       {
          "id":"from2",
          "name":"C",
-         "type":"contract"
+         "type":"contract",
          "atv": "0.17",
          "atf": "1.1"
       },
