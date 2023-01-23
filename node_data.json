@@ -2,7 +2,8 @@
 "nodes": [
 {
 "id": "start",
-"name": "Start"
+"name": "Start", //attribution 
+"type":          // EOA or SmartContract
 },
 {
 "id": "from1",
